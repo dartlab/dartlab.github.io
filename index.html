@@ -2232,7 +2232,7 @@ polyfill-next-selector {
 
 
 
-<polymer-element name="code-editor" attributes="label,value,language" noscript="" vertical="" layout="">
+<polymer-element name="code-editor" attributes="label,value" noscript="" vertical="" layout="">
   <template>
     <paper-input-decorator label="{{label}}" floatinglabel="" relative="" flex="">
       <textarea value="{{value}}" placeholder="" aria-label="{{label}}" fit=""></textarea>
@@ -4656,13 +4656,13 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     </core-toolbar>
     <div horizontal="" layout="" flex="">
       <div flex="" vertical="" layout="">
-        <code-editor label="HTML" value="{{body}}" language="html" flex=""></code-editor>
+        <code-editor label="HTML" value="{{body}}" flex=""></code-editor>
         <core-splitter direction="up"></core-splitter>
-        <code-editor label="Dart" value="{{dart}}" language="dart" flex=""></code-editor>
+        <code-editor label="Dart" value="{{dart}}" flex=""></code-editor>
       </div>
       <core-splitter direction="left"></core-splitter>
       <div flex="" vertical="" layout="">
-        <code-editor label="CSS" value="{{css}}" language="css" flex=""></code-editor>
+        <code-editor label="CSS" value="{{css}}" flex=""></code-editor>
         <core-splitter direction="up"></core-splitter>
         <dart-preview body="{{body}}" css="{{css}}" dart="{{dart}}" flex=""></dart-preview>
       </div>
@@ -4676,7 +4676,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   </template>
   
 </polymer-element>
-<style>@import url(//fonts.googleapis.com/css?family=Open+Sans);
+<style shim-shadowdom="">@import url(//fonts.googleapis.com/css?family=Open+Sans);
 @import url(//fonts.googleapis.com/css?family=Oswald:700);
 /*
  * PolymerThemes v0.4.0
